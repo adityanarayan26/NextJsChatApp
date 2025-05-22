@@ -30,8 +30,9 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import ChatInput from "../(components)/Chatinput";
+
 import { MessageLoading } from "@/components/ui/message-loading";
+import ChatInput from "../(components)/ChatInput";
 export default function Page() {
   const [inputMessage, setInputMessage] = useState(""); // For input field
   const [messages, setMessages] = useState([]); // For chat messages
