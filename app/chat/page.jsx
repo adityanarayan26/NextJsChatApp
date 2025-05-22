@@ -70,6 +70,12 @@ export default function Page() {
           receiver: SelectedUser?.name,
           content: inputMessage
         });
+        setMessages(prev => [...prev, {
+          sender: session?.user?.name,
+          receiver: SelectedUser?.name,
+          content: inputMessage,
+          timestamp: Date.now(),
+        }]);
         setInputMessage(""); // Clear input after sending
       }
       if (inputMessage.length === 0) {
@@ -164,7 +170,7 @@ useEffect(() => {
   };
 
   return (
-    <div className="h-screen w-full bg-black flex">
+    <div className="h-screen w-full  bg-slate-900 flex">
       <SideBar />
       <div className="h-full w-full flex flex-col justify-between">
         <Header  />
@@ -224,13 +230,14 @@ useEffect(() => {
               </ChatBubbleMessage>
             </ChatBubble>
           ))}
-          {isTyping && (
-            <div className="flex items-center gap-2 text-sm text-white mb-2 px-4">
-              <span>{session?.user?.name} is typing</span>
-              <MessageLoading />
-            </div>
-          )}
-          <div ref={messagesEndRef} />
+          <div ref={messagesEndRef}>
+            {isTyping && (
+              <div className="flex items-center gap-2 text-sm text-white px-4 mt-2">
+                <span>{session?.user?.name} is typing</span>
+                <MessageLoading />
+              </div>
+            )}
+          </div>
         </div>
         <div className="input  w-full">
          

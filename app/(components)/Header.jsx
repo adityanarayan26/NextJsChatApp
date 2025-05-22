@@ -14,7 +14,7 @@ const Header = () => {
 
   
   return (
-    <div className='w-full h-24 bg-indigo-400 px-10 flex items-center justify-between'> 
+    <div className='w-full h-24 bg-white px-10 flex items-center justify-between'> 
 <div className='gap-x-5 flex items-center'>
     <Sidebar  className='cursor-pointer' onClick={()=>setIsSidebarOpen(!isSidebaropen)}/>
 <div className='flex items-center gap-x-2'>
