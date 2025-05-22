@@ -1,0 +1,22 @@
+export const Seed = [
+    { "username": "coolcat23", "email": "coolcat23@example.com" },
+    { "username": "jessy_wave", "email": "jessy_wave@example.com" },
+    { "username": "mike99", "email": "mike99@example.com" },
+    { "username": "luna.love", "email": "luna.love@example.com" },
+    { "username": "the_ronin", "email": "the_ronin@example.com" },
+    { "username": "breezy_boy", "email": "breezy_boy@example.com" },
+    { "username": "zoe.sun", "email": "zoe.sun@example.com" },
+    { "username": "tigerstrike", "email": "tigerstrike@example.com" },
+    { "username": "oliver_q", "email": "oliver_q@example.com" },
+    { "username": "nina_moon", "email": "nina_moon@example.com" },
+    { "username": "dashshadow", "email": "dashshadow@example.com" },
+    { "username": "ella.codes", "email": "ella.codes@example.com" },
+    { "username": "ghostrider42", "email": "ghostrider42@example.com" },
+    { "username": "kai_dreams", "email": "kai_dreams@example.com" },
+    { "username": "riley_sky", "email": "riley_sky@example.com" },
+    { "username": "hazel.dev", "email": "hazel.dev@example.com" },
+    { "username": "nova_star", "email": "nova_star@example.com" },
+    { "username": "max_volt", "email": "max_volt@example.com" },
+    { "username": "ivy_leaf", "email": "ivy_leaf@example.com" },
+    { "username": "blakezone", "email": "blakezone@example.com" }
+  ]
