@@ -234,7 +234,7 @@ useEffect(() => {
           <div ref={messagesEndRef}>
             {isTyping && (
               <div className="flex items-center gap-2 text-sm text-white px-4 mt-2">
-                <span>{session?.user?.name} is typing</span>
+                <span>{SelectedUser?.name} is typing</span>
                 <MessageLoading />
               </div>
             )}
